@@ -1,0 +1,17 @@
+quarkus:
+  http:
+    port: 8080
+  log:
+    level: INFO
+  redis:
+    devservices:
+      enabled: true
+      image-name: redis:latest
+      port: 6379
+    promotion:
+      hosts: redis://localhost:6379/0
+activity:
+  issuingTime: 17:38:00+08:00
+  issuingDuration: PT1M
+  reservingTime: 17:35:00+08:00
+  reservingDuration: PT2M
